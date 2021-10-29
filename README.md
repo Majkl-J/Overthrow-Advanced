@@ -1,11 +1,11 @@
 
-# Overthrow Plus
-Overthrow Plus is a rework of the original Overthrow mission created by armazac @ https://github.com/ArmaOverthrow/Overthrow
+# Overthrow Advanced
+Overthrow Advanced is a rework of Overthrow Plus, which is a rework of the original Overthrow mission created by armazac @ https://github.com/ArmaOverthrow/Overthrow
 
 ![image](https://cloud.githubusercontent.com/assets/19246239/17642726/b268a4da-6194-11e6-850a-8951aed0f930.png)
 
 # Overthrow
-A dynamic and persistent revolution campaign mod for ARMA 3 Apex
+A dynamic and persistent revolution campaign mod for ARMA 3 Apex (and Altis aswell)
 
 # Current Features
 * GTA-inspired wanted/stealth system
@@ -21,7 +21,7 @@ A dynamic and persistent revolution campaign mod for ARMA 3 Apex
 * Designed to work in both single player and multiplayer
 
 # Required DLC
-* APEX
+
 
 # Included Addons
 * VCOM AI by genesis92x https://forums.bistudio.com/topic/166374-vcom-ai-v20-ai-overhaul/
@@ -31,5 +31,4 @@ A dynamic and persistent revolution campaign mod for ARMA 3 Apex
 * ACE3 (Fully integrated) [(Steam Workshop)](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
 
 # To install
-* Overthrow is available on the [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=774201744)
-* or from [Github](https://github.com/ArmaOverthrow/Overthrow.Tanoa/releases/latest)
+* Overthrow is available on the [Steam Workshop]()
