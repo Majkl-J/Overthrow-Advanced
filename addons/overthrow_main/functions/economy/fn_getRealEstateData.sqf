@@ -11,6 +11,7 @@ if(typename _this isEqualTo "ARRAY") then {
 if(isNil "_town") exitWith {[-1,-1,-1,-1]};
 private _stability = ((server getVariable format["stability%1",_town]) / 100);
 private _population = server getVariable format["population%1",_town];
+private _support = ([_town] call OT_fnc_support);
 if(_population > 1000) then {_population = 1000};
 if(_population < 300) then {_population = 300};
 _population = (_population / 1000);
@@ -29,7 +30,7 @@ _population = (_population / 1000);
 
 private _price = round(_baseprice + ((_baseprice * _stability * _population) * (1+OT_standardMarkup)));
 private _sell = round(_baseprice + (_baseprice * _stability * _population));
-private _lease = round((_stability * _population) * ((_baseprice * _multiplier) * _totaloccupants * 0.3));
+private _lease = round(((_stability * _population) * ((_baseprice * _multiplier) * _totaloccupants * 0.3))*(1 +(_support * 0.001)) );
 if !(_town in (server getvariable ["NATOabandoned",[]])) then {_lease = round(_lease * 0.2)};
 private _diff = server getVariable ["OT_difficulty",1];
 if(_diff isEqualTo 0) then {_lease = round(_lease * 1.2)};

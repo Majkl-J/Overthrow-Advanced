@@ -61,7 +61,6 @@ if(_handled) then {
 			_owned deleteAt (_owned find _id);
 			[player,"Building Sold",format["Sold: %1 in %2 for $%3",getText(configFile >> "CfgVehicles" >> (typeof _building) >> "displayName"),(getpos _building) call OT_fnc_nearestTown,_sell]] call BIS_fnc_createLogRecord;
 			[_sell] call OT_fnc_money;
-
 		// Fallback for unknown buildings
 		}else{
 			_owned deleteAt (_owned find ([_building] call OT_fnc_getBuildID));

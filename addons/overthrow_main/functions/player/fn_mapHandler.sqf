@@ -224,7 +224,7 @@ if(_scale <= 0.1) then {
 			if((_buildingPos distance2D _mousepos) < 3000) then {
 				_mapCtrl drawIcon [
 					"\A3\ui_f\data\map\mapcontrol\Tourism_CA.paa",
-					[1,1,1,[1,0.3] select (_x in _leased)],
+					[[1,0] select (_x in _leased),[0,1] select (_x in _leased),0,1],
 					_buildingPos,
 					0.3/_scale,
 					0.3/_scale,
