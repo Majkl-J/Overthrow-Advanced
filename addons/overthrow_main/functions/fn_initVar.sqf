@@ -957,7 +957,8 @@ OT_staticWeapons = ["I_Mortar_01_F","I_static_AA_F","I_static_AT_F","I_GMG_01_F"
 OT_miscables = ["ACE_Wheel","ACE_Track",OT_item_Workbench,"Land_PortableLight_double_F","Land_PortableLight_single_F","Land_Camping_Light_F","Land_PortableHelipadLight_01_F","PortableHelipadLight_01_blue_F",
 "PortableHelipadLight_01_green_F","PortableHelipadLight_01_red_F","PortableHelipadLight_01_white_F","PortableHelipadLight_01_yellow_F","Land_Campfire_F","ArrowDesk_L_F",
 "ArrowDesk_R_F","ArrowMarker_L_F","ArrowMarker_R_F","Pole_F","Land_RedWhitePole_F","RoadBarrier_F","RoadBarrier_small_F","RoadCone_F","RoadCone_L_F","Land_VergePost_01_F",
-"TapeSign_F","Land_LampDecor_F","Land_WheelChock_01_F","Land_Sleeping_bag_F","Land_Sleeping_bag_blue_F","Land_WoodenLog_F","FlagChecked_F","FlagSmall_F","Land_LandMark_F","Land_Bollard_01_F"];
+"TapeSign_F","Land_LampDecor_F","Land_WheelChock_01_F","Land_Sleeping_bag_F","Land_Sleeping_bag_blue_F","Land_WoodenLog_F","FlagChecked_F","FlagSmall_F","Land_LandMark_F","Land_Bollard_01_F",
+"Land_CampingTable_F","Land_CampingChair_V2_F"];
 
 //Stuff you can build: [name,price,array of possible classnames,init function,??,description]
 OT_Buildables = [
@@ -979,8 +980,7 @@ OT_Buildables = [
 		["Land_Cargo_House_V4_F",[0,0,0],0,1,0,[],"","",true,false],
 		["Land_ClutterCutter_large_F",[0,0,0],0,1,0,[],"","",true,false],
 		["Box_NATO_AmmoVeh_F",[-2.91,-3.2,0],90,1,0,[],"","",true,false],
-		["Land_WeldingTrolley_01_F",[-3.53163,1.73366,0],87.0816,1,0,[],"","",true,false],
-		["Land_ToolTrolley_02_F",[-3.47775,3.5155,0],331.186,1,0,[],"","",true,false]
+		["Land_fs_feed_F",[2,-3,0],0,1,0,[],"","",true,false]
 	],"OT_fnc_initWorkshop",true,"Attach weapons to vehicles"],
 	["House",2000,["Land_House_Small_06_F","Land_House_Small_02_F","Land_House_Small_03_F","Land_GarageShelter_01_F","Land_Slum_04_F"],"",false,"4 walls, a roof, && if you're lucky a door that opens."],
 	["Police Station",2500,[OT_policeStation],"OT_fnc_initPoliceStation",false,"Allows hiring of policeman to raise stability in a town && keep the peace. Comes with 2 units."],

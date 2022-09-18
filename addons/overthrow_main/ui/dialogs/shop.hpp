@@ -48,7 +48,18 @@ class OT_dialog_buy
 			text = "Buy"; //--- ToDo: Localize;
 			x = 0.752656 * safezoneW + safezoneX;
 			y = 0.676 * safezoneH + safezoneY;
-			w = 0.139219 * safezoneW;
+			w = 0.059219 * safezoneW;
+			h = 0.099 * safezoneH;
+			colorBackground[] = {0,0,0,0.8};
+			action = "[] call OT_fnc_buy;";
+		};
+		class RscButton_1601: RscOverthrowButton
+		{
+			idc = 1601;
+			text = "Full Buy"; //--- ToDo: Localize;
+			x = 0.802656 * safezoneW + safezoneX;
+			y = 0.676 * safezoneH + safezoneY;
+			w = 0.059219 * safezoneW;
 			h = 0.099 * safezoneH;
 			colorBackground[] = {0,0,0,0.8};
 			action = "[] call OT_fnc_buy;";
