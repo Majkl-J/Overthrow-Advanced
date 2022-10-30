@@ -49,10 +49,10 @@ _ctrl ctrlSetStructuredText parseText format[
 		<t align='left' size='0.65'>Fuel Price: $%10/L</t><br/>
 		%11
 	",
-	_town, ["","+"] select (_standing > -1), _standing, OT_nation, ["","+"] select (_rep > -1), _rep,
-	player getVariable ["influence",0],
-	_weather, server getVariable "forecast",
-	[OT_nation,"FUEL",100] call OT_fnc_getPrice,
+	_town, ["","+"] select (_standing > -1), _standing, OT_nation, ["","+"] select (_rep > -1), _rep, //1-6
+	player getVariable ["influence",0], //7
+	_weather, server getVariable "forecast", //8,9
+	[OT_nation,"FUEL",100] call OT_fnc_getPrice, //10
 	_extra
 ];
 

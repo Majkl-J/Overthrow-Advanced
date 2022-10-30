@@ -20,10 +20,12 @@ if(_cls in (OT_allWeapons + OT_allMagazines) && (_town in OT_allTowns)) then {
 	if(_population > 1000) then {_population = 1000};
 	_population = 1-(_population / 1000);
 
+	/* This is currently useless, but might be useful later
 	if(_standing < -100) then {_standing = -100};
 	if(_standing > 100) then {_standing = 100};
 	if(_standing isEqualTo 0) then {_standing = 1};
 	_standing = (_standing/100)+1;
+	*/
 
 	_price = _baseprice + ((_baseprice * 0.55) + (_baseprice * _stability * _population));
 };
