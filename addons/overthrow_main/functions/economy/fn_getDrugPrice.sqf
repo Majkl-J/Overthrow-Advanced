@@ -13,7 +13,7 @@ _population = server getVariable format["population%1",_town];
 if(_population > 1000) then {_population = 1000};
 _population = (_population / 1000); // 0.1% of population
 
-/* Calculates final price */
+/* Calculates final price based on stability and population*/
 _price = _baseprice + _baseprice * (_stability * _population);
 
 if !(_town in OT_allTowns) then {_price = _price * 0.63};
