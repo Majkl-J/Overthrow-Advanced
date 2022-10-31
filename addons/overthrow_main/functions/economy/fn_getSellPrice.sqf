@@ -1,4 +1,4 @@
-params ["_town","_cls",["_standing",0]];
+params ["_town","_cls",["_standing",0]]; //Standing doesn't effect anything, is only here for consistency
 private ["_cost","_baseprice","_stability"];
 
 private _price = 0;

@@ -1,15 +1,16 @@
-params ["_town","_cls",["_standing",0]];
+params ["_town","_cls",["_standing",0]]; //This is the consistent format across all price calculations
+private ["_trade","_cost","_baseprice","_stability"];
 private _price = 0;
 
 /* Parses trade and adjusts the discount by it */
-private _trade = player getvariable ["OT_trade",1];
+_trade = player getvariable ["OT_trade",1];
 
 /* Parses the item cost */
-private _cost = cost getVariable [_cls,[10,0,0,0]];
-private _baseprice = _cost select 0;
+_cost = cost getVariable [_cls,[10,0,0,0]];
+_baseprice = _cost select 0;
 
 /* Parses stability and adjusts it*/
-private _stability = 1.0 - ((server getVariable [format["stability%1",_town],100]) / 100);
+_stability = 1.0 - ((server getVariable [format["stability%1",_town],100]) / 100);
 
 if(_cls isEqualTo "WAGE") then {
 	_stability = ((server getVariable [format["stability%1",_town],100]) / 100); 
