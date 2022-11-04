@@ -1,5 +1,9 @@
-private _town = "";
-private _type = "";
+private _town = ""; private _type = "";
+
+/* 
+Parses the data of real estate,
+outputs a Array [Cost,Sellcost,Lease,OccupantCapacity] 
+*/
 if(typename _this isEqualTo "ARRAY") then {
 	_type = _this select 0;
 	_town = _this select 1;
@@ -36,4 +40,6 @@ private _diff = server getVariable ["OT_difficulty",1];
 if(_diff isEqualTo 0) then {_lease = round(_lease * 1.2)};
 if(_diff isEqualTo 2) then {_lease = round(_lease * 0.8)};
 if(_lease < 1) then {_lease = 1};
+
+//Output
 [_price,_sell,_lease,_totaloccupants]
