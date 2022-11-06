@@ -4,7 +4,7 @@ private _totalpop = 0;
 This is not used for taxes */
 {
     _totalpop = _totalpop + (server getVariable [format["population%1",_x],0]);
-} forEach(server getVariable ["NATOabandoned",[]]);
+} foreach(server getVariable ["NATOabandoned",[]]);
 
 
 /*

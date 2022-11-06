@@ -9,14 +9,14 @@ Even towns in anarchy are counted towards the tax total
 */
 {
     private _town = _x;
-    _total += 250;
+    _total = _total + 250;
     /* If the town is an airfield and not a town 
         This is called tourism income
     */
     if(_town in OT_allAirports) then {
         _total += ((server getVariable [format["stability%1",OT_nation],100]) * 3);
     };
-    _inf++; //Increases influence
+    _inf = _inf + 1; //Increases influence
 
     /* If the town is a town and not an airfield */
     if(_town in OT_allTowns) then {
@@ -27,7 +27,7 @@ Even towns in anarchy are counted towards the tax total
         if(_stability > 49) then {
             _add = round(_add * 4); // Quadruples when town is in resistance control
         };
-        _total += _add;
+        _total = _total + _add;
     };
 }foreach(server getVariable ["NATOabandoned",[]]);
 
