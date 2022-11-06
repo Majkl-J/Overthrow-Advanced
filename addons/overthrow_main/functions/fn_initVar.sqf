@@ -928,7 +928,7 @@ if(isServer) then {
 	cost setVariable ["CIV",[80,0,0,0],true];
 	cost setVariable ["WAGE",[5,0,0,0],true];
 	cost setVariable [OT_item_UAV,[200,0,0,1],true];
-	cost setVariable ["FUEL",[5,0,0,0],true];
+	cost setVariable ["FUEL",[1,0,0,0],true];
 };
 //populate the cost gamelogic with the above data so it can be accessed quickly
 {

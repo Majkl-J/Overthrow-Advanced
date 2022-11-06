@@ -1,10 +1,10 @@
 private _totalpop = 0;
-private _abandoned = server getVariable ["NATOabandoned",[]]; //All towns abandoned by NATO
 
-/* Parses the population of all abandoned towns */
+/* Parses the population of all abandoned towns. 
+This is not used for taxes */
 {
     _totalpop = _totalpop + (server getVariable [format["population%1",_x],0]);
-} forEach _abandoned;
+} forEach(server getVariable ["NATOabandoned",[]]);
 
 
 /*

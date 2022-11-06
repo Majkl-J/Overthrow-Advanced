@@ -33,6 +33,6 @@ if(_standing > 100) then {_standing = 100};
 _standing = (_standing/500); //0.2% of the standing
 
 /* Calculates price, affected by stability, population, standing, trade level */
-_price = (_baseprice + (_baseprice + (_baseprice * _stability * _population) * (1+OT_standardMarkup))) * (1 - ((0.02 * _trade) - _standing));
+_price = (_baseprice + (_baseprice + (_baseprice * _stability * _population) * (1+OT_standardMarkup))) * ((1 - (0.02 * _trade)) - _standing);
 
 round(_price);

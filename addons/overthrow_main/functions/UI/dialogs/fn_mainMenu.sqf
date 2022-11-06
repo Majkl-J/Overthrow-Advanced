@@ -52,7 +52,7 @@ _ctrl ctrlSetStructuredText parseText format[
 	_town, ["","+"] select (_standing > -1), _standing, OT_nation, ["","+"] select (_rep > -1), _rep, //1-6
 	player getVariable ["influence",0], //7
 	_weather, server getVariable "forecast", //8,9
-	[OT_nation,"FUEL",100] call OT_fnc_getPrice, //10
+	[OT_nation,"FUEL",0] call OT_fnc_getPrice, //10
 	_extra
 ];
 
