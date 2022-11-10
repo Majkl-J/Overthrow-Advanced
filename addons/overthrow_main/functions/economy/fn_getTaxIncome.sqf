@@ -14,7 +14,7 @@ Even towns in anarchy are counted towards the tax total
         This is called tourism income
     */
     if(_town in OT_allAirports) then {
-        _total += ((server getVariable [format["stability%1",OT_nation],100]) * 3);
+        _total = total + ((server getVariable [format["stability%1",OT_nation],100]) * 3);
     };
     _inf = _inf + 1; //Increases influence
 

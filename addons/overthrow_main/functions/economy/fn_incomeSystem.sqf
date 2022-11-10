@@ -1,7 +1,9 @@
 /* ----------------------------------------------------------------------------
 Function: incomeSystem
 ---------------------------------------------------------------------------- */
-//Manages passive income for all players (Lease + taxes)
+/* Manages passive income for all players (Lease + taxes)
+   I am not looking through this due to the lack of syntax highligting
+   I enjoy not being too sadomasochistic. I already fixed multiple files full of technical debt, I am not fixing this one... yet */
 
 waitUntil {sleep 1;server getVariable ["StartupType",""] != ""};
 income_system_lasthour = date select 3;
