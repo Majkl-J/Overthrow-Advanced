@@ -1,10 +1,10 @@
-name = "Overthrow Waterpig"; //This name will be displayed only in game , specifically the expansion menu
+name = "Overthrow Advanced"; //This name will be displayed only in game , specifically the expansion menu
 picture = "logo_overthrow.paa"; //Location of your addon's icon
 logo = "logo_overthrow.paa";
 logoOver = "logo_overthrow.paa";
 actionName = "Website";   //The name of the action
 action = "http://armaoverthrow.com/"; //The action , "Authors Website Link"
-description = "Overthrow - Waterpig"; // Addon Description
+description = "A fork of Overthrow Plus"; // Addon Description
 overview = "A Revolution Simulator for Arma 3";
-author = "ARMAzac";
+author = "Waterpig";
 overviewPicture = "logo_overthrow.paa";
