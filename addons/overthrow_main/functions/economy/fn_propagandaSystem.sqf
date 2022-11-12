@@ -1,3 +1,4 @@
+/* Yet another very long shit with no highlights, this is used for radio towers */
 if !(isServer) exitWith {};
 propaganda_system_lasthour = 0;
 waitUntil {sleep 1;server getVariable ["StartupType",""] != ""};

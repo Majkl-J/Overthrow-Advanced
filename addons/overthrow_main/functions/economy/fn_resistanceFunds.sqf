@@ -8,6 +8,8 @@ this has some old singleplayer case code for some reason but I am not willing to
 if(isMultiplayer) then {
     _funds = server getVariable ["money",0];
 };
+
+/* Adds the 1st argument to the money amount */
 if(count _this > 0) then {
     _funds = _funds + (_this select 0);
     if(isMultiplayer) then {

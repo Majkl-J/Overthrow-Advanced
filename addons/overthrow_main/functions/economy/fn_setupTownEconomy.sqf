@@ -1,5 +1,6 @@
 params ["_town"];
 
+/* This sets up basically all the shit you can imagine for towns, including piers, shops, churches (This seems to be some random code), cars, population, stability */
 private _dist = 600;
 if(_town in OT_sprawling || _town in OT_capitals) then {_dist = 1000};
 private _posTown = server getVariable _town;
